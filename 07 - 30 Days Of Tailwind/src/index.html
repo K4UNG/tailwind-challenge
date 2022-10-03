@@ -4,7 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
     <title>09 - 30 Days Of Tailwind</title>
   </head>
-  <body></body>
+  <body class="p-4 md:p-8 text-center">
+    <h1 class="font-bold text-4xl underline">30 Days Of Tailwind</h1>
+
+    <div class="container lg:max-w-screen-lg mx-auto">
+      <!-- CHALLENGE 2 -->
+      <h2 class="heading">Challenge 2 - Typography</h2>
+      <div class="wrapper">
+        <div>
+          <h3 class="text-3xl font-bold text-yellow-600">Hello</h3>
+          <h4 class="text-2xl font-bold text-blue-500">World</h4>
+          <q class="text-slate-600 mt-2 inline-block"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            dignissimos?</q
+          >
+        </div>
+      </div>
+
+      <!-- CHALLENGE 3 -->
+      <h2 class="heading">Challenge 3 - Button</h2>
+      <div class="wrapper">
+        <div
+          class="[&_button]:rounded-md [&_button]:px-4 [&_button]:py-2 space-y-4 space-x-4 font-bold"
+        >
+          <button
+            class="bg-blue-600 text-white border-2 border-blue-600 hover:bg-transparent hover:text-blue-600 transition-colors duration-100"
+          >
+            Primary
+          </button>
+          <button
+            class="border-2 border-slate-600 text-slate-600 hover:bg-slate-600 hover:text-white transition-colors duration-100"
+          >
+            Secondary
+          </button>
+          <button
+            disabled="true"
+            class="bg-slate-300 text-slate-400 cursor-not-allowed"
+          >
+            Disabled
+          </button>
+        </div>
+      </div>
+
+      <!-- CHALLENGE 4 -->
+      <h2 class="heading">Challenge 4 - Select Element</h2>
+      <div class="wrapper">
+        <div class="text-left">
+          <label class="block mb-2" for="food"
+            >Choose your favorite food:</label
+          >
+          <select
+            name="food"
+            id="food"
+            class="bg-white p-2 rounded-md border-2 border-slate-400 w-48"
+          >
+            <option value="" selected disabled="true">choose-a-dish</option>
+            <option value="ramen" class="bg-yellow-100">Ramen</option>
+            <option value="sushi" class="bg-red-100">Sushi</option>
+            <option value="dumplings" class="bg-green-100">Dumplings</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- CHALLENGE 5 -->
+      <h2 class="heading">Challenge 5 - Form</h2>
+      <div class="wrapper text-left">
+        <form class="w-full max-w-sm">
+          <div>
+            <label for="name" class="block mt-2">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="p-2 rounded-md w-full"
+            />
+          </div>
+          <div>
+            <label for="message" class="block mt-2">Message:</label>
+            <textarea
+              type="text"
+              id="message"
+              placeholder="Enter your message"
+              class="p-2 rounded-md w-full"
+              rows="4"
+            ></textarea>
+          </div>
+          <div>
+            <label for="photo" class="block mt-2">Photo:</label>
+            <input
+              type="file"
+              id="photo"
+              class="p-2 rounded-md w-full bg-white file:bg-blue-100 file:border-0 file:py-1 file:text-slate-500 file:mr-4 file:font-bold file:px-2 file:rounded-full"
+            />
+          </div>
+          <button
+            class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full mt-4 hover:opacity-80"
+          >
+            Upload
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

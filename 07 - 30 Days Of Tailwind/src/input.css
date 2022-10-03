@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .heading {
+    @apply mt-8 mb-2 text-2xl font-bold;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply p-4 bg-gray-200 rounded-xl md:p-8 grid place-items-center;
+  }
+}
