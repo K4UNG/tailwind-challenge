@@ -1,0 +1,13 @@
+{
+  "name": "30-day-tailwind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tailwindcss -i src/input.css -o src/main.css --watch",
+    "build": "tailwindcss -i src/input.css -o src/main.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
