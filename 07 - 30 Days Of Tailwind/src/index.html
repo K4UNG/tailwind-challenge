@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
-    <title>09 - 30 Days Of Tailwind</title>
+    <title>30 Days Of Tailwind</title>
   </head>
   <body class="p-4 md:p-8 text-center">
     <h1 class="font-bold text-4xl underline">30 Days Of Tailwind</h1>
@@ -15,7 +15,7 @@
       <h2 class="heading">Challenge 2 - Typography</h2>
       <div class="wrapper">
         <div>
-          <h3 class="text-3xl font-bold text-yellow-600">Hello</h3>
+          <h3 class="text-4xl font-bold text-zinc-700">Hello</h3>
           <h4 class="text-2xl font-bold text-blue-500">World</h4>
           <q class="text-slate-600 mt-2 inline-block"
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
@@ -31,7 +31,7 @@
           class="[&_button]:rounded-md [&_button]:px-4 [&_button]:py-2 space-y-4 space-x-4 font-bold"
         >
           <button
-            class="bg-blue-600 text-white border-2 border-blue-600 hover:bg-transparent hover:text-blue-600 transition-colors duration-100"
+            class="bg-cyan-500 text-white border-2 border-cyan-500 hover:bg-transparent hover:text-cyan-500 transition-colors duration-100"
           >
             Primary
           </button>
@@ -101,11 +101,135 @@
             />
           </div>
           <button
-            class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full mt-4 hover:opacity-80"
+            class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-4 hover:opacity-80"
           >
             Upload
           </button>
         </form>
+      </div>
+
+      <!-- CHALLENGE 6 -->
+      <h2 class="heading">Challenge 6 - Card</h2>
+      <div class="wrapper">
+        <div
+          class="bg-white p-4 rounded-lg md:max-w-xl md:grid md:grid-cols-[4rem_auto] md:text-left gap-x-4 shadow-lg"
+        >
+          <div class="w-16 aspect-square rounded-full overflow-hidden mx-auto">
+            <img
+              src="../../images//person.png"
+              alt="person"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <h3 class="font-bold text-xl text-sky-700 md:text-2xl">
+              Hey there!
+            </h3>
+            <p class="text-slate-600 md:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              facere repudiandae nihil asperiores laboriosam eius quisquam
+              doloribus tenetur quae nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHALLENGE 7 -->
+      <h2 class="heading">Challenge 7 - Navbar</h2>
+      <div class="wrapper">
+        <nav
+          class="bg-white p-4 shadow-md flex justify-between items-center w-full"
+        >
+          <div class="font-bold text-xl">
+            <a href="#" aria-label="home"
+              >Lo<span class="text-violet-800">go</span></a
+            >
+          </div>
+          <ul class="space-x-8 items-center hidden sm:flex">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="" class="hover:underline">About</a></li>
+            <li>
+              <button
+                class="bg-violet-800 text-white py-2 px-6 rounded-full hover:opacity-80"
+              >
+                Get Started
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- CHALLENGE 8 -->
+      <h2 class="heading">Challenge 8 - Grid</h2>
+      <div class="wrapper">
+        <div
+          class="w-full h-80 gap-4 bg-white rounded-md grid p-4 md:grid-cols-2"
+        >
+          <div class="bg-cyan-400 rounded-md"></div>
+          <div class="bg-cyan-500 rounded-md"></div>
+          <div class="bg-cyan-600 rounded-md"></div>
+          <div class="bg-cyan-700 rounded-md"></div>
+        </div>
+      </div>
+
+      <!-- CHALLENGE 9 -->
+      <h2 class="heading">Challenge 9 - Widgets</h2>
+      <div class="wrapper">
+        <div class="w-full max-w-lg">
+          <div
+            class="bg-white p-4 rounded-lg shadow-[0_0_5px_0_rgba(0,0,0,.2)]"
+          >
+            <q class="leading-7 text-slate-500"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi quae nemo hic tempora culpa, fugit aperiam corporis
+              maiores odio voluptate?</q
+            >
+            <div class="text-right font-bold text-sm text-gray-600">
+              - Someone Smart
+            </div>
+          </div>
+          <div
+            class="bg-blue-100 p-4 rounded-lg shadow-[0_0_5px_0_rgba(0,0,0,.2)] md:-translate-y-6 md:translate-x-12"
+          >
+            <q class="leading-7 text-slate-500"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi quae nemo hic tempora culpa, fugit aperiam corporis
+              maiores odio voluptate?</q
+            >
+            <div class="text-right font-bold text-sm text-gray-600">
+              - Someone Smart
+            </div>
+          </div>
+          <div
+            class="bg-white p-4 rounded-lg shadow-[0_0_5px_0_rgba(0,0,0,.2)] md:-translate-y-12 md:-translate-x-12"
+          >
+            <q class="leading-7 text-slate-500"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi quae nemo hic tempora culpa, fugit aperiam corporis
+              maiores odio voluptate?</q
+            >
+            <div class="text-right font-bold text-sm text-gray-600">
+              - Someone Smart
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHALLENGE 10 -->
+      <h2 class="heading">Challenge 10 - Text on Image</h2>
+      <div class="wrapper">
+        <div
+          class="relative w-full max-w-md grid place-items-center h-48 overflow-hidden rounded-lg"
+        >
+          <img
+            src="../../images//bg.jpg"
+            alt="waves"
+            class="absolute w-full h-full object-cover"
+          />
+          <h3 class="z-10 text-white font-bold text-3xl font-serif">
+            This is text on image.
+          </h3>
+        </div>
       </div>
     </div>
   </body>
