@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="[&_button]:px-4 [&_button]:py-2 grid [&_button]:my-2 place-items-center min-h-screen text-center"
+  >
+    <!-- blue background, rounded, thick left border -->
+    <div>
+      <div>
+        <button class="bg-blue-400 border-l-4 border-blue-900 rounded-md">
+          Submit
+        </button>
+      </div>
+
+      <!-- Red text, outlined -->
+      <div><button class="text-red-500 outline">Cancel</button></div>
+
+      <!-- light Indigo background, bottom border, indigo text -->
+      <div>
+        <button class="bg-indigo-200 border-b-2 border-black">Save</button>
+      </div>
+
+      <!-- Thick rounded, lots of padding, large button -->
+      <div class="[&>button]:p-6">
+        <button class="rounded-full bg-slate-300 text-xl font-bold">
+          Buy Now
+        </button>
+      </div>
+
+      <!-- Outlined, serif font, uppercase, rounded -->
+      <div>
+        <button class="font-serif uppercase rounded-md outline">
+          Send Postcard
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
